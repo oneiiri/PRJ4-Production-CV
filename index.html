@@ -3,6 +3,18 @@
   
   <!-- An HTML document always starts with a "head", i.e. information about the page that isn't directly visible -->
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@800&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +26,12 @@
     <!-- Links to our additional CSS styles -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Kiki Kromjong's Resumé</title>
+    <title>Kiki Kromjong's CV</title>
   </head>
   <!-- End of the head -->
 
   <!-- Start of the body, which contains everything visible on the page -->
-  <body class="d-flex flex-column h-100 justify-content-between">
+  <body class="d-flex flex-column h-100 justify-content-between background-image">
 
     <!--
       We use a Bootstrap container to align contents.
@@ -43,14 +55,15 @@
             "w-100" makes sure the image takes the full width of the column it's in
             "rounded-circle" cuts a circle around the image
           -->
-          <img class="w-100 rounded-circle my-3" src="images/photo kiki.jpeg" alt="Portrait of Kiki Kromjong" width="160">
+          <img class="w-100 rounded-circle my-3" src="images/portrait/photo kiki.jpeg" alt="Portrait of Kiki Kromjong" width="160">
         </div>
         <!--
           A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
         -->
         <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
-          <h1 class="fw-bolder">Kiki Kromjong</h1>
-          <h5 class="fst-italic tagline">Your decently educated professional in everything creative.</h5>
+          <h1 class="fw-bolder caveat-brush-regular">Kiki Kromjong</h1>
+          <h5 class="fst-italic tagline anek-devanagari-bodytext">Your decently educated not-so-professional in everything creative.</h5>
+          <h5 class="fst-italic tagline anek-devanagari-bodytext">Experienced in online marketing with a passion for media and entertainment.</h5>
         </div>
       </header>
 
@@ -64,13 +77,13 @@
         <!--
           <main> is another semantic element. It will contain biographical info (professional experience and education).
         -->
-        <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
+        <main class="col-md-7 col-lg-8 col-xl-9 resume-main background-color1">
 
           <!--
             <section> is yet another semantic element. The first one is for professional experience.
           -->
           <section class="my-3 biography-section">
-            <h2>Professional Experience</h2>
+            <h2 class="resume-header-text caveat-brush-regular">Work Experience</h2>
             <!--
               Each list item (li) in the unordered list (ul) below will be one job.
               "list-unstyled" is a class that hides the bullet points of a list.
@@ -81,16 +94,15 @@
               <li class="biography-item row mb-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/projector.svg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/work/logo-leenbakker.webp" alt="Leen Bakker Logo" width="80">
                 </div>
-                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>Production Assistant, Production Company</h4>
-                  <h5>April&ndash;July 2019</h5>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10 anek-devanagari-bodytext">
+                  <h4 class="anek-devanagari-bodytitle">Sales Assistant, Leen Bakker</h4>
+                  <h5 class="anek-devanagari-bodytitle">May &ndash; October 2023</h5>
                   <!-- Use the list below to talk about your achievements -->
-                  <ul class="biography-details list-unstyled">
-                    <li>Coordinated shootings in studio and on location</li>
-                    <li>Liaised with local authorities and with suppliers</li>
-                    <li>Part of my studies at Breda University of Applied Sciences</li>
+                  <ul class="biography-details list-unstyled anek-devanagari-bodytext">
+                    <li>Help give customers advice and finalize sales</li>
+                    <li>Member of the customer service team</li>
                   </ul>
                 </div>
               </li>
@@ -99,12 +111,46 @@
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/trolley.svg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/work/logo-ah.png" alt="Albert Heijn Logo" width="80">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10 anek-devanagari-bodytext">
+                  <h4 class="anek-devanagari-bodytitle">Cashier Employee, Albert Heijn</h4>
+                  <h5 class="anek-devanagari-bodytitle">March &ndash; July 2022</h5>
+                  <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
+                </div>
+              </li>
+
+              <!-- 3rd item in professional experience -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/work/logo-brixxgroup.jpeg" alt="BRIXX Group Logo" width="80">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>Supermarket Employee, Supermarket chain</h4>
-                  <h5>2018</h5>
+                  <h4 class="anek-devanagari-bodytitle">Intern, BRIXX Group</h4>
+                  <h5 class="anek-devanagari-bodytitle">February &ndash; June 2021</h5>
                   <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
+                  <ul class="biography-details list-unstyled anek-devanagari-bodytext">
+                  <li>Worked as a real estate marketing intern</li>
+                  <li>In charge of the social media of multiple companies</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 4th item in professional experience -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/work/logo-firerootstudios.jpeg" alt="Fireroot Studios Logo" width="70">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4 class="anek-devanagari-bodytitle">Intern, Fireroot Studios</h4>
+                  <h5 class="anek-devanagari-bodytitle">September 2020 &ndash; January 2021</h5>
+                  <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
+                  <ul class="biography-details list-unstyled anek-devanagari-bodytext">
+                  <li>Worked as a social media marketing intern for a start-up</li>
+                  <li>In charge of creating 'hype' around their game and company</li>
+                  </ul>
                 </div>
               </li>
 
@@ -114,21 +160,21 @@
           <!-- We're done with jobs, let's move on to schools -->
 
           <section class="my-3 biography-section">
-            <h2>Education</h2>
+            <h2 class="resume-header-text caveat-brush-regular">Education</h2>
             <ul class="biography-list list-unstyled">
 
               <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/school/logo-buas.jpeg" alt="BUas Logo" width="70">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
-                  <h5>2022&nbsp;&ndash;&nbsp;now</h5>
+                  <h4 class="anek-devanagari-bodytitle">BA in Creative Business, Breda University of Applied Sciences</h4>
+                  <h5 class="anek-devanagari-bodytitle">2022&nbsp;&ndash;&nbsp;now</h5>
                   <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
-                  <ul class="biography-details list-unstyled">
-                    <li>Member of the student participation council</li>
-                    <li>Minor in resilient entrepreneurship</li>
+                  <ul class="biography-details list-unstyled anek-devanagari-bodytext">
+                    <li>Member of the Talking Too Much club</li>
+                    <li>Minor in Asking Too Many Questions</li>
                   </ul>
                 </div>
               </li>
@@ -136,12 +182,12 @@
               <!-- 2nd item in education -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/school.svg" alt="School logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/school/logo-glr.png" alt="GLR Logo" width="80">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>Associates Degree, Grafisch Lyceum Rotterdam</h4>
-                  <h5>2017&nbsp;&ndash;&nbsp;2021</h5>
-                  <ul class="biography-details list-unstyled">
+                  <h4 class="anek-devanagari-bodytitle">Associates Degree, Grafisch Lyceum Rotterdam</h4>
+                  <h5 class="anek-devanagari-bodytitle">2017&nbsp;&ndash;&nbsp;2021</h5>
+                  <ul class="biography-details list-unstyled anek-devanagari-bodytext">
                     <li>Graphic Design, specialized in animation</li>
                   </ul>
                 </div>
@@ -149,14 +195,11 @@
 
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/school.svg" alt="School logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/school/logo-csgwvo.png" alt="CSG Willem van Oranje Logo" width="70">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>High School Diploma, City High School</h4>
-                  <h5>2018</h5>
-                  <ul class="biography-details list-unstyled">
-                    <li>Audiovisual media specialization</li>
-                  </ul>
+                  <h4 class="anek-devanagari-bodytitle">Mavo 4 Diploma, CSG Willem van Oranje</h4>
+                  <h5 class="anek-devanagari-bodytitle">2013 &ndash; 2017</h5>
                 </div>
               </li>
             </ul>
@@ -171,40 +214,46 @@
           We now move on to the column with contact details, languages and other skills
           <aside> is also a semantic element.
         -->
-        <aside class="col-md-5 col-lg-4 col-xl-3 resume-aside">
+        <aside class="col-md-5 col-lg-4 col-xl-3 background-color1 resume-aside">
 
           <!-- The first block will be contact details -->
           <section class="my-3 aside-section">
-            <h2>Contact</h2>
+            <h2 class="caveat-brush-regular">Contact</h2>
             <!--
               A list of all your contact details.
               There are more icons in the images/icons folder, have a look if you want to add your LinkedIn or TikTok profile.
               Be careful and only put channels through which you really want to be contacted.
               If your phone number is your personal one, you may want to remove it!
             -->
-            <ul class="contact-list list-unstyled">
+            <ul class="contact-list list-unstyled anek-devanagari-bodytext">
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="mailto:email@buas.nl" target="_blank">
-                  <img class="contact-icon" src="images/icons/envelope.svg" alt="Email">
+                <a class="d-flex align-items-center" href="mailto:223141@buas.nl" target="_blank">
+                  <img class="contact-icon" src="images/icons/icon-email.png" alt="Email">
                   223141@buas.nl
                 </a>
               </li>
+            </li>
+            <li class="contact-item">
+              <a class="d-flex align-items-center" href="https://github.com/oneiiri" target="_blank">
+                <img class="contact-icon" src="images/icons/icon-github.png" alt="Github">
+                Kiki's GitHub Profile
+              </a>
+            </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://facebook.com/" target="_blank">
-                  <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
-                  Facebook Profile
+                <a class="d-flex align-items-center" href="https://facebook.com/kikikromjong/" target="_blank">
+                  <img class="contact-icon" src="images/icons/icon-facebook.png" alt="Facebook">
+                  Kiki's Facebook Profile
                 </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://github.com/" target="_blank">
-                  <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
-                  GitHub Profile
+                <a class="d-flex align-items-center" href="https://www.linkedin.com/in/kikikromjong/" target="_blank">
+                  <img class="contact-icon" src="images/icons/icon-linkedin.png" alt="LinkedIn">
+                  Kiki's LinkedIn Profile
                 </a>
-              </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://www.tiktok.com/@bredauniversityas" target="_blank">
-                  <img class="contact-icon" src="images/icons/tiktok.svg" alt="Mobile Phone">
-                  TikTok @bredauniversityas
+                <a class="d-flex align-items-center" href="https://youtu.be/dQw4w9WgXcQ?si=_p9xB1Ira48FBfRO/" target="_blank">
+                  <img class="contact-icon" src="images/icons/icon-tiktok.png" alt="TikTok">
+                  I'm not giving my TikTok
                 </a>
               </li>
             </ul>
@@ -213,12 +262,12 @@
           <!-- End of contact details, moving on to languages -->
 
           <section class="my-3 aside-section">
-            <h2>Languages</h2>
+            <h2 class="caveat-brush-regular">Languages</h2>
             <!-- Each item in the list is a language. Modify, add or remove depending on what you speak -->
-            <ul class="language-list list-unstyled">
+            <ul class="language-list list-unstyled anek-devanagari-bodytext">
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">Dutch</h5>
-                <div class="language-level w-50 border border-info border-2 position-relative">
+                <div class="language-level language-box w-50 border border-info border-2 position-relative">
                   <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-100"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Native</h6>
@@ -226,7 +275,7 @@
               </li>
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">English</h5>
-                <div class="language-level w-50 border border-info border-2 position-relative">
+                <div class="language-level language-box w-50 border border-info border-2 position-relative">
                   <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-75"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Full proficiency</h6>
@@ -234,7 +283,7 @@
               </li>
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">Spanish</h5>
-                <div class="language-level w-50 border border-info border-2 position-relative">
+                <div class="language-level language-box w-50 border border-info border-2 position-relative">
                   <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-25"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
@@ -246,8 +295,8 @@
           <!-- End of contact details, moving on to other skills -->
 
           <section class="my-3 aside-section">
-            <h2>Other Skills</h2>
-            <ul class="skill-list list-unstyled">
+            <h2 class="caveat-brush-regular">Other Skills</h2>
+            <ul class="skill-list list-unstyled anek-devanagari-bodytext">
               <li class="skill-item">Detail Oriented</li>
               <li class="skill-item">Adobe Suite</li>
               <li class="skill-item">Curious by nature</li>
@@ -257,14 +306,19 @@
           <!-- End of other skills, moving on to interest and hobbies -->
 
           <section class="my-3 aside-section">
-            <h2>Interests &amp; Hobbies</h2>
-            <ul class="skill-list list-unstyled">
+            <h2 class="caveat-brush-regular">Interests &amp; Hobbies</h2>
+            <ul class="skill-list list-unstyled anek-devanagari-bodytext">
               <li class="skill-item">Gaming</li>
               <li class="skill-item">Formula 1</li>
               <li class="skill-item">Avid Binge-watcher</li>
             </ul>
           </section>
 
+          <section>
+            <h2 class="caveat-brush-regular">HIRE ME PLEASE !!</h2>
+            <body class="anek-devanagari-bodytext">I need money really badly</body>
+            <img class="gifmargin" src="images/gif/spongebob-squarepants-begging.gif" alt="Spongebob Begging">
+             </section>
         </aside>
       </div>
     </div>

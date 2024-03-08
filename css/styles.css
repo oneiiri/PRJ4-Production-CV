@@ -6,8 +6,7 @@
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
+	color: #b72c5d;
 	background-color: #f8f8fc;
 }
 
@@ -46,6 +45,70 @@ body {
 /* Styles for contact icons */
 
 .contact-icon {
-	height: 1em;
-	flex-basis: 1.4em;
+	height: 1.5em;
+	flex-basis: 1.5em;
+	padding-right: 0.5em; padding-bottom: 0.2em;
+}
+
+.language-box {
+	padding-left: -3em;
+	margin-left: -3em;
+}
+
+.resume-header-text {
+margin-left: 0.25em;
+padding-bottom: 0.25em;
+}
+
+.background-color1 {
+background: linear-gradient(#ffe1e1, #ff9d9d);
+}
+
+.background-color2 {
+	background:linear-gradient(#eda5e8, #bf8af0)
+}
+
+.background-image {
+ background: url("images/background/background-cv.jpg");
+}
+
+a:link {
+	color:#fa7090;
+}
+
+a:visited {
+	color: rgb(227, 62, 106);
+}
+
+a:hover {
+	color: rgb(80, 0, 166);
+}
+
+.anek-devanagari-bodytext {
+	font-family: "Anek Devanagari", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+}
+
+.anek-devanagari-bodytitle {
+	font-family: "Anek Devanagari", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+}
+
+.caveat-brush-regular {
+		font-family: "Caveat Brush", cursive;
+		font-weight: 400;
+		font-style: normal;
+}
+
+.gifmargin {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
