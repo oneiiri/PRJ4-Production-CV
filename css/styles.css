@@ -3,11 +3,19 @@
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+html {
+	height: 100%;
+}
+
 /* Styles for the body */
 
 body {
 	color: #b72c5d;
-	background-color: #f8f8fc;
+	background: repeating-linear-gradient(#ff9d9d, #fa7090);
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
@@ -35,7 +43,7 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: #b72c5d;
 }
 
 .biography-details li, .skill-list li {
@@ -50,6 +58,8 @@ body {
 	padding-right: 0.5em; padding-bottom: 0.2em;
 }
 
+/* This is where I went kind of nuts, sorry*/
+
 .language-box {
 	padding-left: -3em;
 	margin-left: -3em;
@@ -61,15 +71,21 @@ padding-bottom: 0.25em;
 }
 
 .background-color1 {
-background: linear-gradient(#ffe1e1, #ff9d9d);
+	background: linear-gradient(#ffe1e1, #ff9d9d);
 }
 
 .background-color2 {
-	background:linear-gradient(#eda5e8, #bf8af0)
+	background-image: linear-gradient(to right, #d9d3fa , #ae9ffb);
+}
+
+.bordercolor {
+	border: 3px solid transparent; 
+	border-style: dashed;
+	border-color: #b72c5d;
 }
 
 .background-image {
- background: url("images/background/background-cv.jpg");
+ background-image: url("images/background/background-cv.jpg") repeat fixed center;
 }
 
 a:link {
