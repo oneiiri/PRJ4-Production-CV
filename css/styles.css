@@ -100,6 +100,14 @@ a:hover {
 	color: rgb(80, 0, 166);
 }
 
+h1 {
+	text-shadow: 2px 2px #750c31;
+}
+
+h2 {
+	text-shadow: 2px 2px #750c31;
+}
+
 .anek-devanagari-bodytext {
 	font-family: "Anek Devanagari", sans-serif;
 	font-optical-sizing: auto;
